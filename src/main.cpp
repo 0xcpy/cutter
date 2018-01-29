@@ -103,8 +103,9 @@ int main(int argc, char *argv[])
     }
     else // filename specified as positional argument
     {
-        MainWindow *main = new MainWindow();
-        main->openNewFile(args[0], analLevelSpecified ? analLevel : -1);
+        QWidget *widget = new MainWindow();
+        ((MainWindow*)widget)->openNewFile(args[0], analLevelSpecified ? analLevel : -1);
+        widget->setAttribute(Qt::WA_DeleteOnClose);
     }
 
     // Hack to make it work with AppImage
