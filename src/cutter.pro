@@ -89,8 +89,7 @@ SOURCES += \
     widgets/ClassesWidget.cpp \
     widgets/ResourcesWidget.cpp \
     utils/JupyterConnection.cpp \
-    widgets/JupyterWidget.cpp \
-    utils/CommandServer.cpp
+    widgets/JupyterWidget.cpp
 
 HEADERS  += \
     cutter.h \
@@ -150,8 +149,7 @@ HEADERS  += \
     widgets/ClassesWidget.h \
     widgets/ResourcesWidget.h \
     utils/JupyterConnection.h \
-    widgets/JupyterWidget.h \
-    utils/CommandServer.h
+    widgets/JupyterWidget.h
 
 FORMS    += \
     dialogs/AboutDialog.ui \
